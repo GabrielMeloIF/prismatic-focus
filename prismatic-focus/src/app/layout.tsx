@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Audiowide, Golos_Text} from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css";
+import NavBar from "@/components/NavBar/NavBar";
 
 const audiowide = Audiowide ({
     weight: "400",
@@ -32,8 +33,15 @@ const lufga = localFont({
         path: '../../public/Lufga/Fontspring-DEMO-lufga-medium.otf',
         weight: '500',
         style: 'normal',
+    },
+
+    {
+        path: '../../public/Lufga/Fontspring-DEMO-lufga-bold.otf',
+        weight: '700',
+        style: 'normal',
     }
-  ]
+  ],
+  variable: '--font-lufga',
 })
 
 export default function RootLayout({
@@ -44,8 +52,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${golostext.variable} ${golostext.variable} antialiased`}
+        className={`${audiowide.variable} ${golostext.variable} ${lufga.variable} `}
       >
+
+        <NavBar />
         {children}
       </body>
     </html>

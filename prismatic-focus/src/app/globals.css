@@ -1,9 +1,9 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "remixicon/fonts/remixicon.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "bootstrap-icons/font/bootstrap-icons";
-@import 'remixicon/fonts/remixicon.css';
 
 :root{
   --prim: #022463;
@@ -19,4 +19,21 @@
 
   --transition-regular: 0.3s;
   --transition-slow: 0.6s
+}
+
+.GolosText {
+  font-family: var(--Golostext);
+}
+
+.Audiowide {
+  font-family: var(--Audiowide);
+}
+
+.Lufga {
+  font-family: var(--Lufga);
+}
+
+body {
+  background-color: var(--prim-light);
+  overflow-x: hidden !important; 
 }
