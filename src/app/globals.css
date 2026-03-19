@@ -1,39 +1,53 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "remixicon/fonts/remixicon.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root{
+  /*cores*/
   --prim: #022463;
   --prim-light: #fffffd;
   --second: #0d80cc;
   --white: #fff;
   --black: #000;
+
+  /*gradientes*/
   --gradient: linear-gradient(90deg, #00b7ff 1.9%, #0300a3 85.96%);
 
-  --Golostext: 'Golos Text', sans-serif;
-  --Audiowide: 'Audiowide', sans-serif;
-  --Lufga: 'Lufga', sans-serif;
-
+  /*animações*/
   --transition-regular: 0.3s;
   --transition-slow: 0.6s
 }
 
-.GolosText {
-  font-family: var(--Golostext);
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.Audiowide {
-  font-family: var(--Audiowide);
-}
-
-.Lufga {
-  font-family: var(--Lufga);
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: var(--prim-light);
-  overflow-x: hidden !important; 
+  background-color: #fffaf3;
+  font-family: var(--font-lufga), sans-serif;
+  color: var(--black)
+}
+
+/*==== CLASSES REUTILIZÁVIES ====*/
+.font-golos {
+  font-family: var(--font-golos-text), sans-serif;
+}
+
+.font-audiowide {
+  font-family: var(--font-audiowide), sans-serif;
+}
+
+.font-lufga {
+  font-family: var(--font-lufga), sans-serif;
 }

@@ -9,7 +9,7 @@ export default function MiddleNav() {
         <div className='w-full bg-[var(--prim)] border-b border-gray-300 relative'>
             <div className='flex items-center justify-between py-3 px-[8%] lg:px-[16%]'>
                 {/*Logo*/}
-                <Link href='/' className='text-4xl lg:text-5xl font-bold Audiowide text-(--white) no-underline text-inherit hover:no-underline'>
+                <Link href='/' className='font-audiowide text-4xl lg:text-5xl font-bold Audiowide text-(--white) '>
                     <span className='text-white'>Prismatic</span><span className='text-[var(--second)]'>Focus</span>
                 </Link>
 
@@ -36,8 +36,8 @@ export default function MiddleNav() {
                         height={50}
                     />
                     <div className='flex flex-col'>
-                        <h2 className='GolosText ps-2 text-xs font-semibold text-white'>SUPORTE</h2>
-                        <h1 className='GolosText font-semibold text-white'>12 99999-9999</h1>
+                        <h2 className='font-golos ps-2 text-xs font-semibold text-white'>SUPORTE</h2>
+                        <h1 className='font-golos font-semibold text-white'>12 99999-9999</h1>
                     </div>
                 </div>
             </div>
