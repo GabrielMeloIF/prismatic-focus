@@ -56,8 +56,19 @@ export default function BottomNav() {
 
     return (
         <div 
-            className={`w-full bg-white py-5 shadown-sm transition-all duration-500 ${ isFixed ? 'fixed-nav fixed left-0 top-0 z-50': ''}`}> 
+            className={`w-full bg-white py-5 shadown-sm transition-all duration-500 ${ isFixed ? 'fixed-nav fixed left-0 top-0 z-50': ''}`}>
+
+            <div className='flex w-full items-center justify-between px-[8%] text-gray-700 lg:px-[16%]'>
+
+            {/* Logo Mobile */}
+            <Link
+                href='/'
+                className='font-audiowide text-3xl font-bold text-bold'
+            >
+            </Link>
             
+            </div>
         </div>
     )
+
 };
